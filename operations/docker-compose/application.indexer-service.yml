@@ -2,3 +2,59 @@ spring:
   logging:
     level:
       de.cxp.ocs: DEBUG
+
+ocs:
+  index-config:
+    quick-start:
+      field-configuration:
+        fields:
+          id:
+            name: id
+            type: id
+            usage:
+              - Result
+          title:
+            name: title
+            type: string
+            usage:
+              - Search
+              - Result
+              - Sort
+          score:
+            name: score
+            type: number
+            usage:
+              - Facet
+              - Result
+              - Sort
+          url:
+            name: url
+            type: string
+            usage:
+              - Result
+          number_of_comments:
+            name: number_of_comments
+            type: string
+            source-names:
+              - comms_num
+            usage:
+              - Result
+              - Facet
+              - Sort
+          created:
+            name: created
+            type: number
+            usage:
+              - Result
+              - Sort
+          comment:
+            name: comment
+            source-names:
+              - body 
+            usage:
+              - Search
+              - Result
+          timestamp:
+            name: timestamp
+            usage:
+              - Result

@@ -1,0 +1,1 @@
+git clone git@github.com:vaadin-component-factory/autosuggest.git

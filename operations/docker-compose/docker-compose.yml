@@ -39,7 +39,7 @@ services:
     environment:
       - "discovery.type=single-node"
       - "http.cors.enabled=true"
-      - "http.cors.allow-origin=/https?:\/\/localhost(:[0-9]+)?/"
+      - "http.cors.allow-origin=http://localhost:8080"
     networks:
       - ocs
   
@@ -47,3 +47,5 @@ networks:
   ocs:
     name: ocs
     driver: bridge
+
+
